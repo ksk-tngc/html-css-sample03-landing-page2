@@ -1,0 +1,171 @@
+@charset "utf-8";
+
+/* common */
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: normal;
+}
+
+.btn {
+  padding: 8px 16px;
+  display: inline-block;
+  text-decoration: none;
+  background: #319e00;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* header */
+
+header {
+  padding: 16px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 0;
+}
+
+header .logo {
+  border-radius: 4px;
+}
+
+header .logo-pc {
+  display: none;
+}
+
+/* hero */
+
+.hero {
+  padding: 64px 32px 0;
+  text-align: center;
+  background-color: #99e6ff;
+  background-image: linear-gradient(
+      rgba(153, 230, 255, 0.6),
+      rgba(153, 230, 255, 0.6)
+    ),
+    url(https://source.unsplash.com/white-clouds-on-blue-sky-UiiHVEyxtyA);
+  background-position: center;
+  background-size: cover;
+}
+
+.hero .btn {
+  margin-top: 64px;
+}
+
+.hero p {
+  margin-top: 4px;
+}
+
+.hero img {
+  margin-top: 64px;
+  border-radius: 40px 40px 0 0;
+}
+
+/* features */
+
+.features {
+  padding: 64px 32px;
+}
+
+.features h2 {
+  text-align: center;
+}
+
+/* feature */
+
+.feature {
+  margin-top: 64px;
+}
+
+.feature .img-wrapper {
+  text-align: center;
+}
+
+.feature img {
+  border-radius: 4px;
+}
+
+.feature h3 {
+  margin-top: 16px;
+}
+
+.feature p {
+  margin-top: 16px;
+}
+
+/* footer */
+
+footer {
+  padding: 64px 0;
+  text-align: center;
+  background: #333;
+  color: white;
+}
+
+footer small {
+  font-size: 14px;
+}
+
+/* large screen */
+
+@media (min-width: 600px) {
+  /* header */
+
+  header .logo-pc {
+    display: inline;
+  }
+
+  header .logo-sp {
+    display: none;
+  }
+
+  /* hero */
+
+  .hero .container {
+    display: flex;
+    align-items: center;
+  }
+
+  .hero .group {
+    flex: 1;
+  }
+
+  .hero img {
+    margin-top: 0;
+  }
+
+  /* feature */
+
+  .feature {
+    display: flex;
+    gap: 32px;
+  }
+
+  .feature:nth-of-type(even) {
+    flex-direction: row-reverse;
+  }
+}
