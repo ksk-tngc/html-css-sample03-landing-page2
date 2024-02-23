@@ -2,8 +2,6 @@
 
 レスポンシブ対応のランディングページのサンプルです。
 
-### レスポンシブ
-
 <img width="620" src="https://github.com/ksk-tngc/html-css-sample02-landing-page/assets/59589496/8cfe7d01-5fe2-42df-83a0-533c7116b488">
 
 ### SP 表示
